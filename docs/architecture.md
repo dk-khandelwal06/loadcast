@@ -59,3 +59,4 @@ LoadCast bridges local scientific machine-learning training in Python with zero-
 - In-memory sliding-window rate limiting prevents denial-of-service abuse.
 - Security response headers (`X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: origin-when-cross-origin`) are injected automatically via Next.js config.
 - Zero secrets or API keys are exposed to client code or committed to Git.
+

@@ -40,3 +40,4 @@ Evaluation metrics on the chronological test holdout (99 days):
 - **Ridge RMSE:** 18.28 MU vs. **Naive RMSE:** 19.36 MU (+5.6% improvement)
 - **Ridge MAE:** 11.25 MU vs. **Naive MAE:** 11.32 MU (+0.5% improvement)
 - **Ridge MAPE:** 5.52% vs. **Naive MAPE:** 5.56%
+

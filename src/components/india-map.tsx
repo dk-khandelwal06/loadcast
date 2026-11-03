@@ -233,3 +233,4 @@ export function IndiaMap({ states, onSelectState }: IndiaMapProps) {
     </div>
   );
 }
+

@@ -189,3 +189,4 @@ export function ElectricHero({
     </section>
   );
 }
+

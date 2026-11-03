@@ -167,3 +167,4 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 ## 7. Operational Disclaimer
 
 > **Disclaimer:** LoadCast is an educational and scientific demonstration of time-series regression on historical power consumption data. Its predictions are experimental academic models and must not be used as operational grid-control, safety-critical switching, or electricity-dispatch instructions.
+

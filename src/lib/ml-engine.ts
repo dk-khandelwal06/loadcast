@@ -152,3 +152,4 @@ export function predictElectricityDemand(
     residualMU: actualDemand !== undefined ? Math.round((actualDemand - predictedDemandMU) * 100) / 100 : undefined
   };
 }
+

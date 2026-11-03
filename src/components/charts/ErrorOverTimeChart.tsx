@@ -75,3 +75,4 @@ export function ErrorOverTimeChart({ data }: ErrorOverTimeChartProps) {
     </div>
   );
 }
+

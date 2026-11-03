@@ -195,3 +195,4 @@ export function getForecastForHistoricalDate(targetDate: string): ForecastResult
     targetRow.demand
   );
 }
+

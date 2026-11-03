@@ -26,3 +26,4 @@ The first variant allows the model to predict $y_t$ using a feature that contain
 On March 25, 2020, India enacted a nationwide lockdown. Industrial electricity demand plummeted overnight. 
 - In our test set, during the lockdown period, model RMSE was higher because the underlying data generating process (DGP) underwent a discrete regime change.
 - Rather than discarding the lockdown rows, LoadCast explicitly isolates the lockdown sensitivity to demonstrate how linear models respond to macroeconomic shocks.
+

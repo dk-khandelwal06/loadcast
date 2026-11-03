@@ -155,3 +155,4 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
 export function useAudio() {
   return useContext(ElectricityAudioContext);
 }
+

@@ -84,3 +84,4 @@ export function ResidualDistributionChart({ data }: ResidualDistributionChartPro
     </div>
   );
 }
+

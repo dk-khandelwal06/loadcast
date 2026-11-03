@@ -38,3 +38,4 @@
 | `min_demand_mu` | Float | Lowest observed daily demand in MU |
 | `max_demand_mu` | Float | Peak observed daily demand in MU |
 | `has_trained_model`| Boolean | True for Rajasthan, False for telemetry-only states |
+

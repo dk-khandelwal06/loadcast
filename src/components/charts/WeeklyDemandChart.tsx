@@ -60,3 +60,4 @@ export function WeeklyDemandChart({ data }: WeeklyDemandChartProps) {
     </div>
   );
 }
+

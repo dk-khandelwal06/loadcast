@@ -25,3 +25,4 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Failed to load summary", message: error?.message }, { status: 500 });
   }
 }
+

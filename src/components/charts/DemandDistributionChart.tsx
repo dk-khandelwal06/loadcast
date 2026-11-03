@@ -66,3 +66,4 @@ export function DemandDistributionChart({ data }: DemandDistributionChartProps) 
     </div>
   );
 }
+

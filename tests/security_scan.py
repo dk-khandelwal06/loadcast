@@ -55,3 +55,4 @@ if __name__ == "__main__":
     success = scan()
     if not success:
         exit(1)
+
