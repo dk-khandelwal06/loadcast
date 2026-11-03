@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default Light Mode: Warm off-white, ivory surfaces, graphite typography, electric amber accents */
+  --bg-primary: #faf9f6;
+  --bg-secondary: #f4f3ef;
+  --surface-primary: #ffffff;
+  --surface-secondary: #fcfbf8;
+  --surface-tertiary: #f0eee8;
+  --border-subtle: #e6e3da;
+  --border-strong: #d5d1c4;
+  
+  --color-text-primary: #18191d;
+  --color-text-secondary: #4b4e57;
+  --color-text-muted: #737887;
+  
+  --electric-amber: #d97706;
+  --electric-amber-hover: #b45309;
+  --electric-amber-light: #fef3c7;
+  --electric-glow: rgba(217, 119, 6, 0.25);
+  
+  --electric-cyan: #0284c7;
+  --electric-cyan-hover: #0369a1;
+  --electric-cyan-light: #e0f2fe;
+  
+  --chart-grid: #eae7de;
+  --chart-line-actual: #d97706;
+  --chart-line-pred: #0284c7;
+  --chart-line-naive: #8b5cf6;
+  
+  --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --card-shadow-hover: 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  /* Dark Mode: Graphite backgrounds, deep slate surfaces, soft white typography, electric amber and cyan accents */
+  --bg-primary: #0f1115;
+  --bg-secondary: #14171e;
+  --surface-primary: #181c24;
+  --surface-secondary: #1f2430;
+  --surface-tertiary: #272d3d;
+  --border-subtle: #262c3a;
+  --border-strong: #363e52;
+  
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #8490a6;
+  
+  --electric-amber: #f59e0b;
+  --electric-amber-hover: #fbbf24;
+  --electric-amber-light: rgba(245, 158, 11, 0.15);
+  --electric-glow: rgba(245, 158, 11, 0.35);
+  
+  --electric-cyan: #38bdf8;
+  --electric-cyan-hover: #0ea5e9;
+  --electric-cyan-light: rgba(56, 189, 248, 0.15);
+  
+  --chart-grid: #262c3a;
+  --chart-line-actual: #f59e0b;
+  --chart-line-pred: #38bdf8;
+  --chart-line-naive: #a78bfa;
+  
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.25);
+  --card-shadow-hover: 0 12px 30px -4px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Electric Grid Background */
+.bg-grid-pattern {
+  background-image: radial-gradient(var(--border-subtle) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Electric Glow Utility */
+.electric-border {
+  border: 1px solid var(--border-subtle);
+  transition: all 0.25s ease;
+}
+
+.electric-border:hover {
+  border-color: var(--electric-amber);
+  box-shadow: 0 0 16px var(--electric-glow);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

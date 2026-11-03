@@ -1,0 +1,209 @@
+{
+  "dataset_name": "Power Consumption in India (2019-2020)",
+  "source": "POSOCO Energy Reports via Kaggle (twinkle0705)",
+  "total_raw_rows": 503,
+  "clean_daily_rows": 498,
+  "columns_count": 34,
+  "state_columns": [
+    "Punjab",
+    "Haryana",
+    "Rajasthan",
+    "Delhi",
+    "UP",
+    "Uttarakhand",
+    "HP",
+    "J&K",
+    "Chandigarh",
+    "Chhattisgarh",
+    "Gujarat",
+    "MP",
+    "Maharashtra",
+    "Goa",
+    "DNH",
+    "Andhra Pradesh",
+    "Telangana",
+    "Karnataka",
+    "Kerala",
+    "Tamil Nadu",
+    "Pondy",
+    "Bihar",
+    "Jharkhand",
+    "Odisha",
+    "West Bengal",
+    "Sikkim",
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Tripura"
+  ],
+  "target_state": "Rajasthan",
+  "date_range": {
+    "start": "2019-01-02",
+    "end": "2020-12-05",
+    "total_days_span": 704,
+    "actual_observations": 498
+  },
+  "duplicate_dates_found": 5,
+  "duplicate_resolution_strategy": "Daily arithmetic mean across duplicate date entries to preserve all sensor readings without arbitrary record deletion",
+  "missing_values_raw": {
+    "Date": 0,
+    "Punjab": 0,
+    "Haryana": 0,
+    "Rajasthan": 0,
+    "Delhi": 0,
+    "UP": 0,
+    "Uttarakhand": 0,
+    "HP": 0,
+    "J&K": 0,
+    "Chandigarh": 0,
+    "Chhattisgarh": 0,
+    "Gujarat": 0,
+    "MP": 0,
+    "Maharashtra": 0,
+    "Goa": 0,
+    "DNH": 0,
+    "Andhra Pradesh": 0,
+    "Telangana": 0,
+    "Karnataka": 0,
+    "Kerala": 0,
+    "Tamil Nadu": 0,
+    "Pondy": 0,
+    "Bihar": 0,
+    "Jharkhand": 0,
+    "Odisha": 0,
+    "West Bengal": 0,
+    "Sikkim": 0,
+    "Arunachal Pradesh": 0,
+    "Assam": 0,
+    "Manipur": 0,
+    "Meghalaya": 0,
+    "Mizoram": 0,
+    "Nagaland": 0,
+    "Tripura": 0
+  },
+  "missing_values_processed": 0,
+  "continuity_gaps_count": 22,
+  "continuity_gaps": [
+    {
+      "from": "2019-01-31",
+      "to": "2019-02-02",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-02-28",
+      "to": "2019-03-02",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-03-31",
+      "to": "2019-04-02",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-04-30",
+      "to": "2019-05-02",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-05-31",
+      "to": "2019-06-02",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-08-06",
+      "to": "2019-08-08",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-09-06",
+      "to": "2019-09-08",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-10-06",
+      "to": "2019-10-08",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-11-06",
+      "to": "2019-11-08",
+      "gap_days": 2
+    },
+    {
+      "from": "2019-12-06",
+      "to": "2019-12-08",
+      "gap_days": 2
+    },
+    {
+      "from": "2020-01-05",
+      "to": "2020-01-13",
+      "gap_days": 8
+    },
+    {
+      "from": "2020-02-05",
+      "to": "2020-02-13",
+      "gap_days": 8
+    },
+    {
+      "from": "2020-03-05",
+      "to": "2020-03-13",
+      "gap_days": 8
+    },
+    {
+      "from": "2020-04-05",
+      "to": "2020-04-13",
+      "gap_days": 8
+    },
+    {
+      "from": "2020-05-05",
+      "to": "2020-05-13",
+      "gap_days": 8
+    },
+    {
+      "from": "2020-05-23",
+      "to": "2020-06-01",
+      "gap_days": 9
+    },
+    {
+      "from": "2020-06-05",
+      "to": "2020-07-01",
+      "gap_days": 26
+    },
+    {
+      "from": "2020-07-05",
+      "to": "2020-08-01",
+      "gap_days": 27
+    },
+    {
+      "from": "2020-08-05",
+      "to": "2020-09-01",
+      "gap_days": 27
+    },
+    {
+      "from": "2020-09-05",
+      "to": "2020-10-01",
+      "gap_days": 26
+    },
+    {
+      "from": "2020-10-05",
+      "to": "2020-11-01",
+      "gap_days": 27
+    },
+    {
+      "from": "2020-11-05",
+      "to": "2020-12-01",
+      "gap_days": 26
+    }
+  ],
+  "demand_summary": {
+    "mean": 218.83,
+    "median": 223.15,
+    "std": 27.18,
+    "min": 105.8,
+    "max": 278.0,
+    "unit": "MU (Mega Units / Million kWh)"
+  }
+}

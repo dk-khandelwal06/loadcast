@@ -1,0 +1,959 @@
+{
+  "train_range": {
+    "start": "2019-01-09",
+    "end": "2020-02-28",
+    "count": 392,
+    "percentage": 80.0
+  },
+  "test_range": {
+    "start": "2020-02-29",
+    "end": "2020-12-05",
+    "count": 99,
+    "percentage": 20.0
+  },
+  "metrics": {
+    "ridge": {
+      "rmse": 18.2802,
+      "mae": 11.2545,
+      "mape": 5.52
+    },
+    "naive": {
+      "rmse": 19.3646,
+      "mae": 11.3162,
+      "mape": 5.558
+    },
+    "comparison": {
+      "rmse_improvement_pct": 5.6,
+      "mae_improvement_pct": 0.55,
+      "mape_improvement_pct": 0.68,
+      "beats_baseline": true
+    }
+  },
+  "covid_sensitivity": {
+    "description": "Evaluation comparing model behavior during the March 25 - May 31, 2020 national lockdown structural break versus standard periods.",
+    "lockdown_period": {
+      "start": "2020-03-25",
+      "end": "2020-05-31"
+    },
+    "lockdown_points_in_test": 46,
+    "lockdown_metrics_ridge": {
+      "rmse": 15.4605,
+      "mae": 9.898,
+      "mape": 4.635
+    },
+    "non_lockdown_metrics_ridge": {
+      "rmse": 20.4142,
+      "mae": 12.4319,
+      "mape": 6.287
+    }
+  },
+  "holdout_predictions": [
+    {
+      "date": "2020-02-29",
+      "actual": 205.0,
+      "predicted_ridge": 224.84,
+      "predicted_naive": 227.1,
+      "residual": -19.84,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-01",
+      "actual": 240.7,
+      "predicted_ridge": 203.99,
+      "predicted_naive": 205.0,
+      "residual": 36.71,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-02",
+      "actual": 242.6,
+      "predicted_ridge": 237.09,
+      "predicted_naive": 240.7,
+      "residual": 5.51,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-03",
+      "actual": 239.0,
+      "predicted_ridge": 238.62,
+      "predicted_naive": 242.6,
+      "residual": 0.38,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-04",
+      "actual": 231.5,
+      "predicted_ridge": 234.97,
+      "predicted_naive": 239.0,
+      "residual": -3.47,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-05",
+      "actual": 243.4,
+      "predicted_ridge": 227.77,
+      "predicted_naive": 231.5,
+      "residual": 15.63,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-13",
+      "actual": 237.6,
+      "predicted_ridge": 237.7,
+      "predicted_naive": 243.4,
+      "residual": -0.1,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-14",
+      "actual": 240.4,
+      "predicted_ridge": 233.25,
+      "predicted_naive": 237.6,
+      "residual": 7.15,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-15",
+      "actual": 220.9,
+      "predicted_ridge": 236.49,
+      "predicted_naive": 240.4,
+      "residual": -15.59,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-16",
+      "actual": 218.1,
+      "predicted_ridge": 218.29,
+      "predicted_naive": 220.9,
+      "residual": -0.19,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-17",
+      "actual": 201.3,
+      "predicted_ridge": 215.72,
+      "predicted_naive": 218.1,
+      "residual": -14.42,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-18",
+      "actual": 218.1,
+      "predicted_ridge": 200.1,
+      "predicted_naive": 201.3,
+      "residual": 18.0,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-19",
+      "actual": 225.8,
+      "predicted_ridge": 216.57,
+      "predicted_naive": 218.1,
+      "residual": 9.23,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-20",
+      "actual": 239.7,
+      "predicted_ridge": 223.58,
+      "predicted_naive": 225.8,
+      "residual": 16.12,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-21",
+      "actual": 242.6,
+      "predicted_ridge": 239.35,
+      "predicted_naive": 239.7,
+      "residual": 3.25,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-22",
+      "actual": 146.2,
+      "predicted_ridge": 240.5,
+      "predicted_naive": 242.6,
+      "residual": -94.3,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-23",
+      "actual": 149.5,
+      "predicted_ridge": 151.08,
+      "predicted_naive": 146.2,
+      "residual": -1.58,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-24",
+      "actual": 148.6,
+      "predicted_ridge": 154.76,
+      "predicted_naive": 149.5,
+      "residual": -6.16,
+      "is_covid": false
+    },
+    {
+      "date": "2020-03-25",
+      "actual": 150.1,
+      "predicted_ridge": 155.92,
+      "predicted_naive": 148.6,
+      "residual": -5.82,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-26",
+      "actual": 150.6,
+      "predicted_ridge": 159.27,
+      "predicted_naive": 150.1,
+      "residual": -8.67,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-27",
+      "actual": 155.5,
+      "predicted_ridge": 162.22,
+      "predicted_naive": 150.6,
+      "residual": -6.72,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-28",
+      "actual": 158.3,
+      "predicted_ridge": 171.93,
+      "predicted_naive": 155.5,
+      "residual": -13.63,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-29",
+      "actual": 212.7,
+      "predicted_ridge": 171.09,
+      "predicted_naive": 158.3,
+      "residual": 41.61,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-30",
+      "actual": 215.9,
+      "predicted_ridge": 220.2,
+      "predicted_naive": 212.7,
+      "residual": -4.3,
+      "is_covid": true
+    },
+    {
+      "date": "2020-03-31",
+      "actual": 218.6,
+      "predicted_ridge": 220.89,
+      "predicted_naive": 215.9,
+      "residual": -2.29,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-01",
+      "actual": 207.9,
+      "predicted_ridge": 221.33,
+      "predicted_naive": 218.6,
+      "residual": -13.43,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-02",
+      "actual": 210.7,
+      "predicted_ridge": 209.23,
+      "predicted_naive": 207.9,
+      "residual": 1.47,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-03",
+      "actual": 215.6,
+      "predicted_ridge": 210.05,
+      "predicted_naive": 210.7,
+      "residual": 5.55,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-04",
+      "actual": 211.3,
+      "predicted_ridge": 215.7,
+      "predicted_naive": 215.6,
+      "residual": -4.4,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-05",
+      "actual": 225.1,
+      "predicted_ridge": 212.81,
+      "predicted_naive": 211.3,
+      "residual": 12.29,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-13",
+      "actual": 225.9,
+      "predicted_ridge": 225.16,
+      "predicted_naive": 225.1,
+      "residual": 0.74,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-14",
+      "actual": 226.0,
+      "predicted_ridge": 225.37,
+      "predicted_naive": 225.9,
+      "residual": 0.63,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-15",
+      "actual": 233.0,
+      "predicted_ridge": 224.24,
+      "predicted_naive": 226.0,
+      "residual": 8.76,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-16",
+      "actual": 228.5,
+      "predicted_ridge": 229.88,
+      "predicted_naive": 233.0,
+      "residual": -1.38,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-17",
+      "actual": 227.1,
+      "predicted_ridge": 225.0,
+      "predicted_naive": 228.5,
+      "residual": 2.1,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-18",
+      "actual": 217.2,
+      "predicted_ridge": 225.67,
+      "predicted_naive": 227.1,
+      "residual": -8.47,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-19",
+      "actual": 229.6,
+      "predicted_ridge": 216.54,
+      "predicted_naive": 217.2,
+      "residual": 13.06,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-20",
+      "actual": 239.7,
+      "predicted_ridge": 227.66,
+      "predicted_naive": 229.6,
+      "residual": 12.04,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-21",
+      "actual": 234.3,
+      "predicted_ridge": 236.38,
+      "predicted_naive": 239.7,
+      "residual": -2.08,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-22",
+      "actual": 226.4,
+      "predicted_ridge": 231.04,
+      "predicted_naive": 234.3,
+      "residual": -4.64,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-23",
+      "actual": 234.3,
+      "predicted_ridge": 223.11,
+      "predicted_naive": 226.4,
+      "residual": 11.19,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-24",
+      "actual": 229.4,
+      "predicted_ridge": 229.9,
+      "predicted_naive": 234.3,
+      "residual": -0.5,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-25",
+      "actual": 227.8,
+      "predicted_ridge": 227.22,
+      "predicted_naive": 229.4,
+      "residual": 0.58,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-26",
+      "actual": 261.8,
+      "predicted_ridge": 225.69,
+      "predicted_naive": 227.8,
+      "residual": 36.11,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-27",
+      "actual": 268.1,
+      "predicted_ridge": 256.93,
+      "predicted_naive": 261.8,
+      "residual": 11.17,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-28",
+      "actual": 271.3,
+      "predicted_ridge": 261.35,
+      "predicted_naive": 268.1,
+      "residual": 9.95,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-29",
+      "actual": 270.4,
+      "predicted_ridge": 262.46,
+      "predicted_naive": 271.3,
+      "residual": 7.94,
+      "is_covid": true
+    },
+    {
+      "date": "2020-04-30",
+      "actual": 275.2,
+      "predicted_ridge": 260.41,
+      "predicted_naive": 270.4,
+      "residual": 14.79,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-01",
+      "actual": 271.0,
+      "predicted_ridge": 263.29,
+      "predicted_naive": 275.2,
+      "residual": 7.71,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-02",
+      "actual": 264.9,
+      "predicted_ridge": 260.63,
+      "predicted_naive": 271.0,
+      "residual": 4.27,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-03",
+      "actual": 187.7,
+      "predicted_ridge": 255.34,
+      "predicted_naive": 264.9,
+      "residual": -67.64,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-04",
+      "actual": 171.6,
+      "predicted_ridge": 184.52,
+      "predicted_naive": 187.7,
+      "residual": -12.92,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-05",
+      "actual": 185.3,
+      "predicted_ridge": 171.82,
+      "predicted_naive": 171.6,
+      "residual": 13.48,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-13",
+      "actual": 178.8,
+      "predicted_ridge": 186.68,
+      "predicted_naive": 185.3,
+      "residual": -7.88,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-14",
+      "actual": 192.5,
+      "predicted_ridge": 182.99,
+      "predicted_naive": 178.8,
+      "residual": 9.51,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-15",
+      "actual": 208.7,
+      "predicted_ridge": 197.57,
+      "predicted_naive": 192.5,
+      "residual": 11.13,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-16",
+      "actual": 214.8,
+      "predicted_ridge": 216.81,
+      "predicted_naive": 208.7,
+      "residual": -2.01,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-17",
+      "actual": 245.1,
+      "predicted_ridge": 219.2,
+      "predicted_naive": 214.8,
+      "residual": 25.9,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-18",
+      "actual": 249.0,
+      "predicted_ridge": 244.76,
+      "predicted_naive": 245.1,
+      "residual": 4.24,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-19",
+      "actual": 250.3,
+      "predicted_ridge": 246.62,
+      "predicted_naive": 249.0,
+      "residual": 3.68,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-20",
+      "actual": 251.7,
+      "predicted_ridge": 245.24,
+      "predicted_naive": 250.3,
+      "residual": 6.46,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-21",
+      "actual": 249.7,
+      "predicted_ridge": 244.86,
+      "predicted_naive": 251.7,
+      "residual": 4.84,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-22",
+      "actual": 247.4,
+      "predicted_ridge": 241.87,
+      "predicted_naive": 249.7,
+      "residual": 5.53,
+      "is_covid": true
+    },
+    {
+      "date": "2020-05-23",
+      "actual": 243.3,
+      "predicted_ridge": 241.52,
+      "predicted_naive": 247.4,
+      "residual": 1.78,
+      "is_covid": true
+    },
+    {
+      "date": "2020-06-01",
+      "actual": 210.4,
+      "predicted_ridge": 237.86,
+      "predicted_naive": 243.3,
+      "residual": -27.46,
+      "is_covid": false
+    },
+    {
+      "date": "2020-06-02",
+      "actual": 217.5,
+      "predicted_ridge": 207.63,
+      "predicted_naive": 210.4,
+      "residual": 9.87,
+      "is_covid": false
+    },
+    {
+      "date": "2020-06-03",
+      "actual": 220.4,
+      "predicted_ridge": 214.86,
+      "predicted_naive": 217.5,
+      "residual": 5.54,
+      "is_covid": false
+    },
+    {
+      "date": "2020-06-04",
+      "actual": 222.7,
+      "predicted_ridge": 218.1,
+      "predicted_naive": 220.4,
+      "residual": 4.6,
+      "is_covid": false
+    },
+    {
+      "date": "2020-06-05",
+      "actual": 225.4,
+      "predicted_ridge": 220.56,
+      "predicted_naive": 222.7,
+      "residual": 4.84,
+      "is_covid": false
+    },
+    {
+      "date": "2020-07-01",
+      "actual": 223.2,
+      "predicted_ridge": 224.68,
+      "predicted_naive": 225.4,
+      "residual": -1.48,
+      "is_covid": false
+    },
+    {
+      "date": "2020-07-02",
+      "actual": 219.8,
+      "predicted_ridge": 222.64,
+      "predicted_naive": 223.2,
+      "residual": -2.84,
+      "is_covid": false
+    },
+    {
+      "date": "2020-07-03",
+      "actual": 203.2,
+      "predicted_ridge": 217.83,
+      "predicted_naive": 219.8,
+      "residual": -14.63,
+      "is_covid": false
+    },
+    {
+      "date": "2020-07-04",
+      "actual": 212.6,
+      "predicted_ridge": 205.34,
+      "predicted_naive": 203.2,
+      "residual": 7.26,
+      "is_covid": false
+    },
+    {
+      "date": "2020-07-05",
+      "actual": 225.5,
+      "predicted_ridge": 214.09,
+      "predicted_naive": 212.6,
+      "residual": 11.41,
+      "is_covid": false
+    },
+    {
+      "date": "2020-08-01",
+      "actual": 225.7,
+      "predicted_ridge": 226.85,
+      "predicted_naive": 225.5,
+      "residual": -1.15,
+      "is_covid": false
+    },
+    {
+      "date": "2020-08-02",
+      "actual": 228.7,
+      "predicted_ridge": 226.69,
+      "predicted_naive": 225.7,
+      "residual": 2.01,
+      "is_covid": false
+    },
+    {
+      "date": "2020-08-03",
+      "actual": 224.7,
+      "predicted_ridge": 228.82,
+      "predicted_naive": 228.7,
+      "residual": -4.12,
+      "is_covid": false
+    },
+    {
+      "date": "2020-08-04",
+      "actual": 219.8,
+      "predicted_ridge": 224.4,
+      "predicted_naive": 224.7,
+      "residual": -4.6,
+      "is_covid": false
+    },
+    {
+      "date": "2020-08-05",
+      "actual": 236.5,
+      "predicted_ridge": 218.43,
+      "predicted_naive": 219.8,
+      "residual": 18.07,
+      "is_covid": false
+    },
+    {
+      "date": "2020-09-01",
+      "actual": 244.7,
+      "predicted_ridge": 234.38,
+      "predicted_naive": 236.5,
+      "residual": 10.32,
+      "is_covid": false
+    },
+    {
+      "date": "2020-09-02",
+      "actual": 225.9,
+      "predicted_ridge": 241.52,
+      "predicted_naive": 244.7,
+      "residual": -15.62,
+      "is_covid": false
+    },
+    {
+      "date": "2020-09-03",
+      "actual": 215.6,
+      "predicted_ridge": 223.38,
+      "predicted_naive": 225.9,
+      "residual": -7.78,
+      "is_covid": false
+    },
+    {
+      "date": "2020-09-04",
+      "actual": 153.3,
+      "predicted_ridge": 213.71,
+      "predicted_naive": 215.6,
+      "residual": -60.41,
+      "is_covid": false
+    },
+    {
+      "date": "2020-09-05",
+      "actual": 193.9,
+      "predicted_ridge": 159.43,
+      "predicted_naive": 153.3,
+      "residual": 34.47,
+      "is_covid": false
+    },
+    {
+      "date": "2020-10-01",
+      "actual": 201.1,
+      "predicted_ridge": 196.35,
+      "predicted_naive": 193.9,
+      "residual": 4.75,
+      "is_covid": false
+    },
+    {
+      "date": "2020-10-02",
+      "actual": 247.9,
+      "predicted_ridge": 204.19,
+      "predicted_naive": 201.1,
+      "residual": 43.71,
+      "is_covid": false
+    },
+    {
+      "date": "2020-10-03",
+      "actual": 237.5,
+      "predicted_ridge": 251.01,
+      "predicted_naive": 247.9,
+      "residual": -13.51,
+      "is_covid": false
+    },
+    {
+      "date": "2020-10-04",
+      "actual": 242.7,
+      "predicted_ridge": 239.93,
+      "predicted_naive": 237.5,
+      "residual": 2.77,
+      "is_covid": false
+    },
+    {
+      "date": "2020-10-05",
+      "actual": 237.3,
+      "predicted_ridge": 243.3,
+      "predicted_naive": 242.7,
+      "residual": -6.0,
+      "is_covid": false
+    },
+    {
+      "date": "2020-11-01",
+      "actual": 220.9,
+      "predicted_ridge": 234.76,
+      "predicted_naive": 237.3,
+      "residual": -13.86,
+      "is_covid": false
+    },
+    {
+      "date": "2020-11-02",
+      "actual": 218.1,
+      "predicted_ridge": 219.21,
+      "predicted_naive": 220.9,
+      "residual": -1.11,
+      "is_covid": false
+    },
+    {
+      "date": "2020-11-03",
+      "actual": 201.3,
+      "predicted_ridge": 215.88,
+      "predicted_naive": 218.1,
+      "residual": -14.58,
+      "is_covid": false
+    },
+    {
+      "date": "2020-11-04",
+      "actual": 213.8,
+      "predicted_ridge": 202.26,
+      "predicted_naive": 201.3,
+      "residual": 11.54,
+      "is_covid": false
+    },
+    {
+      "date": "2020-11-05",
+      "actual": 216.6,
+      "predicted_ridge": 214.0,
+      "predicted_naive": 213.8,
+      "residual": 2.6,
+      "is_covid": false
+    },
+    {
+      "date": "2020-12-01",
+      "actual": 220.4,
+      "predicted_ridge": 218.55,
+      "predicted_naive": 216.6,
+      "residual": 1.85,
+      "is_covid": false
+    },
+    {
+      "date": "2020-12-02",
+      "actual": 218.4,
+      "predicted_ridge": 222.04,
+      "predicted_naive": 220.4,
+      "residual": -3.64,
+      "is_covid": false
+    },
+    {
+      "date": "2020-12-03",
+      "actual": 205.6,
+      "predicted_ridge": 219.35,
+      "predicted_naive": 218.4,
+      "residual": -13.75,
+      "is_covid": false
+    },
+    {
+      "date": "2020-12-04",
+      "actual": 207.0,
+      "predicted_ridge": 207.14,
+      "predicted_naive": 205.6,
+      "residual": -0.14,
+      "is_covid": false
+    },
+    {
+      "date": "2020-12-05",
+      "actual": 201.4,
+      "predicted_ridge": 210.38,
+      "predicted_naive": 207.0,
+      "residual": -8.98,
+      "is_covid": false
+    }
+  ],
+  "residual_distribution": [
+    {
+      "bin_start": -94.3,
+      "bin_end": -85.1,
+      "count": 1
+    },
+    {
+      "bin_start": -85.1,
+      "bin_end": -75.9,
+      "count": 0
+    },
+    {
+      "bin_start": -75.9,
+      "bin_end": -66.7,
+      "count": 1
+    },
+    {
+      "bin_start": -66.7,
+      "bin_end": -57.5,
+      "count": 1
+    },
+    {
+      "bin_start": -57.5,
+      "bin_end": -48.3,
+      "count": 0
+    },
+    {
+      "bin_start": -48.3,
+      "bin_end": -39.1,
+      "count": 0
+    },
+    {
+      "bin_start": -39.1,
+      "bin_end": -29.9,
+      "count": 0
+    },
+    {
+      "bin_start": -29.9,
+      "bin_end": -20.7,
+      "count": 1
+    },
+    {
+      "bin_start": -20.7,
+      "bin_end": -11.49,
+      "count": 12
+    },
+    {
+      "bin_start": -11.49,
+      "bin_end": -2.29,
+      "count": 17
+    },
+    {
+      "bin_start": -2.29,
+      "bin_end": 6.91,
+      "count": 36
+    },
+    {
+      "bin_start": 6.91,
+      "bin_end": 16.11,
+      "count": 21
+    },
+    {
+      "bin_start": 16.11,
+      "bin_end": 25.31,
+      "count": 3
+    },
+    {
+      "bin_start": 25.31,
+      "bin_end": 34.51,
+      "count": 2
+    },
+    {
+      "bin_start": 34.51,
+      "bin_end": 43.71,
+      "count": 4
+    }
+  ],
+  "eval_model_parameters": {
+    "alpha": 1.0,
+    "features": [
+      "lag_1",
+      "lag_7",
+      "rolling_mean_7",
+      "day_of_week",
+      "month",
+      "is_weekend"
+    ],
+    "intercept": 218.12117346938774,
+    "coefficients": {
+      "lag_1": 25.430412312158722,
+      "lag_7": 1.5238022483433653,
+      "rolling_mean_7": -4.273948504340662,
+      "day_of_week": -0.829061169047435,
+      "month": 0.7123048218303052,
+      "is_weekend": 1.3404023309150217
+    },
+    "scaler": {
+      "mean": {
+        "lag_1": 218.14693877551022,
+        "lag_7": 218.21045918367346,
+        "rolling_mean_7": 218.16676384839653,
+        "day_of_week": 3.0,
+        "month": 6.045918367346939,
+        "is_weekend": 0.28316326530612246
+      },
+      "scale": {
+        "lag_1": 26.97568734000376,
+        "lag_7": 27.00912506976204,
+        "rolling_mean_7": 21.72471961664753,
+        "day_of_week": 1.9974473505870805,
+        "month": 3.591079320651893,
+        "is_weekend": 0.4505350491219267
+      }
+    }
+  }
+}
