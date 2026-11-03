@@ -19,7 +19,7 @@ An interactive electricity demand forecasting platform powered by time-series fe
 [![Recharts](https://img.shields.io/badge/Recharts-2.13-FF6B6B?style=flat-square)](https://recharts.org/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat-square&logo=vercel)](https://loadcast.vercel.app/)
 
-**[🌐 Live Demo](https://loadcast.vercel.app/) &nbsp;·&nbsp; [📦 GitHub Repository](https://github.com/dk-khandelwal06/loadcast) &nbsp;·&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/daksh-khandelwal-b02748391/)**
+**[🌐 Live Demo](https://loadcast.vercel.app/) &nbsp;·&nbsp; [📦 GitHub Repository](https://github.com/dk-khandelwal06/loadcast) &nbsp;·&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/daksh-khandelwal-b02748391/) &nbsp;·&nbsp; [🎥 Demo Video]()**
 
 </div>
 
